@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kalau Film</string>
+    <string name="lanjutkan">Click Here to Countinue</string>
+    <string name="poweredby">powered by : Kalau.web.id</string>
+    <string name="cari">Cari</string>
+    <string name="placeholders">Masukan Judul Film</string>
+</resources>

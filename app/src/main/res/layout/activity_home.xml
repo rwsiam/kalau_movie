@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.web.kalau.rwsiam.tugasiak.Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+       >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linierHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/now_playing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main"
+                android:text="Now Playing"
+                android:padding="10dp"
+                android:textColor="@color/putih" />
+
+            <Button
+                android:id="@+id/popular_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/putih"
+                android:text="Popular Movie"
+                android:padding="10dp"
+                android:textColor="@color/main" />
+
+            <Button
+                android:id="@+id/upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main"
+                android:text="Upcoming"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/putih" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_judul"
+            android:text="Popular Movie"
+            android:layout_below="@id/linierHome"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textSize="24sp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/recycler"
+            android:layout_below="@id/home_judul"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

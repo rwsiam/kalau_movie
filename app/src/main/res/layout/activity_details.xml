@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="id.web.kalau.rwsiam.tugasiak.Details">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_img"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_title"
+            android:layout_below="@id/detail_img"
+            android:text="@string/cari"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_rilis_date"
+            android:layout_below="@id/detail_title"
+            android:textSize="14sp"
+            android:text="2017-12-12 (released)"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_genre"
+            android:layout_below="@id/detail_rilis_date"
+            android:text="Action, Drama, Romance"
+            android:textSize="14sp"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_runtime"
+            android:text="Duration : 120 min"
+            android:layout_below="@id/detail_genre"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_rating"
+            android:layout_toRightOf="@id/detail_rilis_date"
+            android:layout_below="@id/detail_title"
+            android:textAlignment="textEnd"
+            android:text="7.9"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/ic_rating"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_companies"
+            android:layout_below="@id/detail_runtime"
+            android:textSize="14sp"
+            android:text="Production : DC Comic, marvel studio"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_budget"
+            android:layout_below="@id/detail_companies"
+            android:text="budget : $200,000,000"
+            android:textSize="14sp"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_revenue"
+            android:layout_below="@id/detail_companies"
+            android:layout_toRightOf="@id/detail_budget"
+            android:text="revenue : $200,000,000"
+            android:textSize="14sp"
+            android:layout_margin="5sp"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_label_overview"
+            android:text="Overview"
+            android:textStyle="bold"
+            android:layout_below="@id/detail_budget"
+            android:layout_margin="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_overview"
+            android:layout_below="@id/detail_label_overview"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="detail movie"
+            android:textAlignment="gravity"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
