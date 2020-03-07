@@ -35,7 +35,7 @@ public class Details extends AppCompatActivity {
     private TextView detail_genre, detail_durasi, detail_company;
     private TextView detail_budget, detail_revenu, detail_overview;
 
-    private static final String API_KEY = "81dc0bd4286937f55cc3567219e9dcac";
+    private static final String API_KEY = "Your Api KEY";
     private static final String API_LANG  = "en-US";
     private static final String API_APPEND = "reviews";
 
